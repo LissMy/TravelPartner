@@ -1,0 +1,29 @@
+.container {
+  background-color: #fff;
+  padding: 10px 30px;
+  color: #21b0cc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .logo {
+    span {
+      color: #ffbd22;
+    }
+  }
+
+  .links {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li a{
+        text-decoration: none;
+        color: #21b0cc;
+      }
+    }
+  }
+}

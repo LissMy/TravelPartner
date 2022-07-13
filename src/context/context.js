@@ -17,10 +17,10 @@ const options = {
     sort: "recommended",
     lang: "en_US",
   },
-  headers: {
-    "X-RapidAPI-Key": "f085f415a0mshe64373e3890a631p14ff0ejsn4f98c0d0d159",
-    "X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
-  },
+  // headers: {
+  //   "X-RapidAPI-Key": "f085f415a0mshe64373e3890a631p14ff0ejsn4f98c0d0d159",
+  //   "X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
+  // },
 };
 
 const AppContext = React.createContext();

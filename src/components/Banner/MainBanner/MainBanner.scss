@@ -1,0 +1,53 @@
+.banner-container {
+  height: 90vh;
+  width: 100vw;
+  background: linear-gradient(
+      to right,
+      rgba(33, 176, 204, 1),
+      rgba(217, 217, 217, 0)
+    ),
+    url("../../assets/pexels-pixabay-221457.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+
+    h1 {
+      font-size: 85px;
+      font-weight: bold;
+      line-height: 70px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .banner-container {
+
+    .content {
+        padding-left: 20px;
+
+        h1 {
+            font-size: 45px;
+            line-height: 40px;
+        }
+        
+        p {
+            width: 80%;
+        }
+    }
+  }
+}

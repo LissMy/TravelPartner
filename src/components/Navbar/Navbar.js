@@ -19,10 +19,10 @@ const Navbar = () => {
             <Link to="/hotels">Hotels</Link>
           </li>
           <li>
-            <Link to="/tours">Tours</Link>
+            <Link to="/restaurants">Restaurants</Link>
           </li>
           <li>
-            <Link to="/offers">Special Offers</Link>
+            <Link to="/attractions">Attractions</Link>
           </li>
         </ul>
       </div>

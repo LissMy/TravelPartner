@@ -1,0 +1,43 @@
+.hotels {
+    max-width: 1400px;
+    margin: 50px auto;
+  
+    .title {
+      color: #21B0CC;
+      font-weight: bold;
+      margin-left: 10px;
+      font-size: 40px;
+  
+      span {
+        color: #FFBD22;
+      }
+    }
+  
+    .hotels-4x {
+      display: flex;
+      flex-wrap: wrap;
+  
+      div {
+        margin: 10px;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 728px) {
+    .hotels {
+  
+      .title {
+        display: flex;
+        justify-content: center;
+        
+        span {
+          margin-left: 10px;
+        }
+      }
+  
+      .hotels-4x {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }

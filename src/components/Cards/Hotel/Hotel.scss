@@ -1,0 +1,38 @@
+.hotelCard {
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-shadow: 14px 17px 29px 10px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 14px 17px 29px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 14px 17px 29px 10px rgba(0, 0, 0, 0.05);
+  width: 23%;
+  border-radius: 15px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    color: #21b0cc;
+    padding-left: 10px;
+  }
+
+  .content {
+    padding: 15px;
+    line-height: 35px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .info {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+    .hotelCard {
+      width: 80%;
+    }
+  }

@@ -7,6 +7,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  height: 100px;
 
   .logo {
     span {
@@ -23,7 +24,14 @@
       li a{
         text-decoration: none;
         color: #21b0cc;
+        font-weight: 600;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .container {
+    flex-direction: column;
   }
 }

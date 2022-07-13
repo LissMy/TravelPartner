@@ -1,26 +1,30 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import Button from "../../Button/Button";
 import "./Hotel.scss";
 
-const Hotel = () => {
+const Hotel = ({ hotel }) => {
+  if(typeof hotel == 'undefined') {
+    return <h1>Loading...</h1>
+  }
+  const { location_id, name, location_string, rating, photo } = (typeof hotel !== 'undefined' && hotel)
   return (
     <div className="hotelCard">
       <img
-        src="https://media-cdn.tripadvisor.com/media/photo-f/15/88/f0/ad/centre-point-hotel-pattaya.jpg"
-        alt="hotelImage"
+        src={photo?.images?.medium.url}
+        alt={name}
       />
       <div className="content">
-        <h1>Centre Point Hotel Pattaya</h1>
+        <h1>{name}</h1>
         <div className="info">
-        <p>
-          Location: <span>Pattaya, Chonburi Province</span>
-        </p>
-        <p>
-          Rating: <span>4.0</span>
-        </p>
+          <p>
+            Location: <span>{location_string}</span>
+          </p>
+          <p>
+            Rating: <span>{rating}</span>
+          </p>
         </div>
-        <Button title="See More" path='/offers' />
+        <Button title="See More" path={`/hotels/${location_id}`} />
       </div>
     </div>
   );

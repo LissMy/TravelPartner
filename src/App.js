@@ -8,11 +8,11 @@ import Hotels from "./pages/Hotels/Hotels";
 import Restaurants from "./pages/Restaurants/Restaurants";
 import Attractions from "./pages/Attractions/Attractions";
 import HotelDetails from "./pages/Details/HotelDetails/HotelDetails";
+import RestaurantDetails from "./pages/Details/ResturantDetails/RestaurantDetails";
+import AttractionDetails from "./pages/Details/AttractionDetails/AttractionDetails";
 
 
 function App() {
-  const { hotelList } = React.useContext(AppContext);
-  console.log(hotelList);
 
   return (
     <Router>
@@ -22,7 +22,9 @@ function App() {
         <Route path="/hotels" element={<Hotels />} />
         <Route path="/restaurants" element={<Restaurants />} />
         <Route path="/attractions" element={<Attractions />} />
-        <Route path="/hotels/1" element={<HotelDetails />} />
+        <Route path="/hotels/:id" element={<HotelDetails />} />
+        <Route path="/restaurants/:id" element={<RestaurantDetails />} />
+        <Route path="/attractions/:id" element={<AttractionDetails />} />
       </Routes>
     </Router>
   )

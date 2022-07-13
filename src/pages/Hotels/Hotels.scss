@@ -22,7 +22,36 @@
       }
     }
   }
+
+  .paginationBttns {
+    width: 80%;
+    margin: 40px auto;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
   
+    a {
+      padding: 10px;
+      margin: 8px;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #FFBD22;
+      cursor: pointer;
+    
+      &:hover {
+        background-color: #ca920e;
+      }
+    }
+
+    .pagination-active {
+
+      a {
+        background-color: #21B0CC;
+      }
+    }
+  }
+
   @media only screen and (max-width: 728px) {
     .hotels {
   

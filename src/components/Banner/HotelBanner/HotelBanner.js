@@ -7,9 +7,9 @@ const HotelBanner = () => {
     <div className="Hotelbanner-container">
       <div className="content">
         <h1>
-          Centre Point <br /> Hotel Pattaya
+          Centara Grand Mirage <br /> Beach Resort Pattaya
         </h1>
-        <Button title="See More" path='/offers' />
+        <Button title="See More" path="/hotels/1515437" />
       </div>
     </div>
   );

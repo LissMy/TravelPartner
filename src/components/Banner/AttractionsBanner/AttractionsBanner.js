@@ -9,7 +9,7 @@ const AttractionsBanner = () => {
         <h1>
         Atoll Transfer
         </h1>
-        <Button title="See More" path='/offers' />
+        <Button title="See More" path='/attractions/8712073' />
       </div>
     </div>
   );

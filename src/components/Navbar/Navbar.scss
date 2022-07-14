@@ -10,6 +10,10 @@
   height: 100px;
 
   .logo {
+    a {
+      text-decoration: none;
+      color: #21b0cc;
+    }
     span {
       color: #ffbd22;
     }
@@ -21,7 +25,7 @@
       display: flex;
       gap: 20px;
 
-      li a{
+      li a {
         text-decoration: none;
         color: #21b0cc;
         font-weight: 600;

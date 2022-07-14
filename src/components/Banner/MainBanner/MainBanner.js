@@ -15,7 +15,7 @@ const MainBanner = () => {
           iusto fugit molestias cumque assumenda accusantium nostrum impedit.
           Ratione, esse incidunt.
         </p>
-        <Button title="Special Offers" path='/offers' />
+        <Button title="See Hotels" path='/hotels' />
       </div>
     </div>
   );

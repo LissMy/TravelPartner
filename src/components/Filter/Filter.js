@@ -99,8 +99,6 @@ const Filter = () => {
             <option value="asc">Asc</option>
             <option value="desc">Desc</option>
           </select>
-          <button type="submit">filter</button>
-          {/* <button onClick={clearFilterHandler}>Clear Filter</button> */}
         </form>
       </div>
     </div>

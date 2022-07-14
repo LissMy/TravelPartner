@@ -1,0 +1,44 @@
+.hotelDetail {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  
+    img {
+      max-width: 60%;
+      height: 80vh;
+      object-fit: cover;
+    }
+  
+    .detail-info {
+      padding-left: 40px;
+      h1 {
+        color: #21b0cc;
+        font-weight: bold;
+      }
+  
+      span {
+          font-weight: bold;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 728px) {
+    .hotelDetail {
+      flex-direction: column;
+      align-items: center;
+  
+      img {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+  
+      .detail-info {
+        padding-left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+  
+  }
+  }

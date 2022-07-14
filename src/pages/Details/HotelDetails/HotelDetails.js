@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./HotelDetails.scss";
-import Loader from "../../../components/Loader/Loader";
 
 const HotelDetails = () => {
   const [hotelDetail, setHotelDetail] = useState(null);
@@ -36,35 +35,31 @@ const HotelDetails = () => {
 
   console.log(hotelDetail);
 
-  if (hotelDetail === "null") {
-    return <Loader />
-  }
   if (hotelDetail) {
-    const { name, location_string, rating, price, awards, description, photo } = hotelDetail
+    const { name, location_string, rating, price, awards, description, photo } =
+      hotelDetail;
     return (
       <div className="hotelDetail">
-        <img
-          src={photo.images.original.url}
-          alt={name}
-        />
+        <img src={photo.images.original.url} alt={name} />
         <div className="detail-info">
           <h1>{name}</h1>
           <p>
-            Location: <span>{ location_string }</span>
+            Location: <span>{location_string}</span>
           </p>
           <p>
-            Rating: <span>{ rating }</span>
+            Rating: <span>{rating}</span>
           </p>
           <p>
-            Price: <span>{ price }</span>
+            Price: <span>{price}</span>
           </p>
-          
+
           <p>
-            Awards: <span>{ awards.length === 0 ? 'No awards' : awards[0].display_name}</span>
+            Awards:{" "}
+            <span>
+              {awards.length === 0 ? "No awards" : awards[0].display_name}
+            </span>
           </p>
-          <p>
-            {description}
-          </p>
+          <p>{description}</p>
         </div>
       </div>
     );

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import RestaurantBanner from "../../components/Banner/RestaurantBanner/RestaurantBanner";
 import Restaurant from "../../components/Cards/Restaurant/Restaurant";
+import Filter from "../../components/Filter/Filter";
 import { AppContext } from "../../context/context";
 import "./Restaurants.scss";
 
@@ -32,6 +33,7 @@ const Restaurants = () => {
         <h1 className="title">
           Best <span>Restaurants</span>
         </h1>
+        <Filter />
         <div className="hotels-4x">{displayRestaurants}</div>
         <ReactPaginate
           previousLabel={"Previous"}

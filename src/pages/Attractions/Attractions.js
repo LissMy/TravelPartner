@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import AttractionsBanner from "../../components/Banner/AttractionsBanner/AttractionsBanner";
 import Attraction from "../../components/Cards/Attraction/Attraction";
-import Hotel from "../../components/Cards/Hotel/Hotel";
 import Filter from "../../components/Filter/Filter";
 import { AppContext } from "../../context/context";
 import "./Attractions.scss";

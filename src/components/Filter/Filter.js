@@ -23,7 +23,7 @@ const Filter = () => {
       ...filterHotels,
       ...filterInfo,
     });
-  }, [filterInfo]);
+  }, [filterInfo, filterHotels, setFilterHotels]);
 
   const toggleFilter = () => {
     setOpenFilter(!openFilter);

@@ -3,7 +3,6 @@ import Banner from "../../components/Banner/MainBanner/MainBanner";
 import Attraction from "../../components/Cards/Attraction/Attraction";
 import Hotel from "../../components/Cards/Hotel/Hotel";
 import Restaurant from "../../components/Cards/Restaurant/Restaurant";
-import Loader from "../../components/Loader/Loader";
 import { AppContext } from "../../context/context";
 import "./Home.scss";
 

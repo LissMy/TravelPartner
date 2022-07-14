@@ -1,25 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-
-// const hotelOptions = {
-//   method: "GET",
-//   url: "https://travel-advisor.p.rapidapi.com/hotels/list",
-//   params: {
-//     location_id: "293919",
-//     adults: "1",
-//     rooms: "1",
-//     nights: "2",
-//     pricesmax: "100",
-//     pricesmin: "10",
-//     order: "asc",
-//     sort: "recommended",
-//   },
-//   headers: {
-//     "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
-//     "X-RapidAPI-Host": "travel-advisor.p.rapidapi.com",
-//   },
-// };
-
 
 const restaurantOptions = {
   method: "GET",
